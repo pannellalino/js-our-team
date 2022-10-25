@@ -3,6 +3,8 @@
 Stampare su console le informazioni di nome, ruolo e la stringa della foto
 */
 
+let listaMembri = document.getElementById('lista');
+
 const membriTeam = [
   {
     nome: 'Wayne Barnett',
@@ -36,4 +38,6 @@ const membriTeam = [
   },
 ];
 
-console.log(membriTeam);
+for(let membro of membriTeam){
+  console.log(membro);
+}

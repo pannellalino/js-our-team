@@ -39,7 +39,7 @@ const membriTeam = [
 ];
 
 for(let membro of membriTeam){
-  let st = `<li>${membro}</li>`;
+  let st = `<li>${membro.nome} / ${membro.ruolo} / ${membro.foto}</li>`;
   listaMembri.innerHTML += st;
-  console.log(membro);
+  console.log(membriTeam);
 };

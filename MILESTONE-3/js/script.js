@@ -4,6 +4,8 @@ Stampare delle card formattate contenete immagini e testo (La grafica fornita è
 */
 
 let row = document.querySelector('.row');
+const title = document.getElementById('title');
+const bio = document.getElementById('text');
 
 const membriTeam = [
   {
@@ -38,11 +40,14 @@ const membriTeam = [
   },
 ];
 
+title.innerHTML = `Our Team`;
+bio.innerHTML = `Questo è il nostro Team`
+
 for(let membro of membriTeam){
   let card =`
   <div class="col-4">
         <div class="card mb-5" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
+          <img src="img/${membro.foto}" class="card-img-top" alt="${membro.nome}">
           <div class="card-body">
             <h5 class="card-title text-center">${membro.nome}</h5>
             <p class="card-text text-center">${membro.ruolo}</p>

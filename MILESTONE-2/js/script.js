@@ -39,6 +39,6 @@ const membriTeam = [
 ];
 
 for(let membro of membriTeam){
-  listaMembri.innerHTML = `${membriTeam['membro']}`;
+  listaMembri.innerHTML = `${membriTeam}`;
   console.log(membro);
 };
